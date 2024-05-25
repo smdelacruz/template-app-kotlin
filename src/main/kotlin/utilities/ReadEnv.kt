@@ -1,4 +1,4 @@
-package utilities
+package utilities.utilities
 
 import java.util.Properties
 import kotlin.jvm.JvmStatic

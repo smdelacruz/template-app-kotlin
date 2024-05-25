@@ -1,8 +1,8 @@
+package utilities
+
 import com.google.gson.Gson
 import java.io.File
-import java.io.FileInputStream
 import java.io.FileOutputStream
-import java.io.OutputStream
 import java.util.*
 
 data class DeviceEnvironment(

@@ -2,6 +2,50 @@
 
 ### Project Structure
 
+```tree
+
+├── main # pages and helpers
+│   ├── kotlin
+│   │   ├── android
+│   │   │   ├── AndroidPageObjectManager.kt
+│   │   │   ├── AndroidScreenActions.kt
+│   │   │   └── AppPage.kt
+│   │   ├── apis
+│   │   │   └── example.json
+│   │   ├── ios
+│   │   │   ├── AppPage.kt
+│   │   │   ├── IosPageObjectManager.kt
+│   │   │   └── IosScreenActions.kt
+│   │   └── utilities
+│   │       ├── ApiResponseHandler.kt
+│   │       ├── AppCenter.kt
+│   │       ├── CustomLogger.kt
+│   │       ├── Enums.kt
+│   │       ├── ReadConfig.kt
+│   │       ├── ReadEnv.kt
+│   │       ├── ScreenActions.kt
+│   │       ├── ServerAppium.kt
+│   │       └── interface
+│   │           └── CommonFunction.kt
+│   └── resources # folders for environement and .ipa / .apk
+│       ├── api.properties
+│       ├── deviceEnvironment.json
+│       └── env.properties
+└── test # Test cases and Jenkins file
+    ├── kotlin
+    │   ├── TestBase.kt --> Entry point of the test
+    │   ├── android
+    │   │   └── TestCaseName.kt
+    │   └── ios
+    │       └── TestCaseName.kt
+    └── resources
+        ├── allure.properties
+        └── jenkinsfile
+            └── SampleJenkins.groovy
+
+
+```
+
 
 #### Requirements
 - nodeJS 21.16.2

@@ -1,7 +1,5 @@
 import android.AndroidPageObjectManager
 import io.appium.java_client.AppiumDriver
-import io.appium.java_client.android.AndroidDriver
-import io.appium.java_client.ios.IOSDriver
 import io.qameta.allure.Allure
 import ios.IosPageObjectManager
 import org.openqa.selenium.OutputType
