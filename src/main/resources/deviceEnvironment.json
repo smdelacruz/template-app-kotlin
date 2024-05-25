@@ -1,0 +1,23 @@
+{
+  "TestEnvironments": {
+    "Android13_Beta": {
+      "platform": "Android",
+      "appType": "[apptype here]",
+      "automationName": "UiAutomator2",
+      "version": "13",
+      "deviceName": "[devicename here]"
+    },
+    "Ios17_Beta": {
+      "platform": "Ios",
+      "appType": "[apptype here]",
+      "automationName": "XCUITest",
+      "version": "17",
+      "deviceName": "[devicename here]",
+      "deviceUdId": "[udid here]",
+      "orgId": "[orgid here]",
+      "signingId": "iPhone Developer",
+      "usePrebuildWda": "true",
+      "portWda": "8202"
+    }
+  }
+}
