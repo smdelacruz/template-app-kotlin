@@ -184,22 +184,25 @@ Execute specific test
 ### Run on Jenkins
 #### Install Jenkins
 1. Install: Download and install https://www.jenkins.io/download/lts/macos/
-2. Credentials of Jenkins 
-3. Open Jenkins > Manage jenkins > System > Change the following
+2. Open Jenkins > Manage jenkins > System > Change the following
+
     - Jenkins URL: http://localhost:8080/
     - Global properties > Environment variables > Add the following
         - ANDROID_HOME = /Users/<your-computer-name>/Library/Android/sdk
         - APP_VERSION =  2024.10.0 (example only)
         - PATH+EXTRA = (result from echo $PATH)
-4. Install plugins: ANSI, Slack, Git
-5. Get ssh public key
+3. Install plugins: ANSI, Slack, Git
+4. Get ssh public key
+
 ```bash
 cd .ssh
 cat id_rsa.pub
 ```
+
 6. Add this public key on space preferences > Git Keys > Add SSH Key
 7. Copy env.properties from (me) to .jenkins/ file because we have step on pipeline to copy this env.properties to jenkins workspace
 8. Setup Slack https://medium.com/appgambit/integrating-jenkins-with-slack-notifications-4f14d1ce9c7a9Add Credentials on Manage Jenkins > Credentials >  Click Global > Add Credentials > Add for Space and Slack
+
 
 ### Before running on real device
 1. Make Sure PIN and auto-fill are disabled on both devices
