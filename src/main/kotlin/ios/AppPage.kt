@@ -29,8 +29,4 @@ open class IosPage(driver: AppiumDriver?) : IosScreenActions(driver!!) {
     fun stepsToDoHere() {
         click(ELEMENT_NAME)
     }
-
-    override fun implicitWait(waitTime: Long) {
-        TODO("Not yet implemented")
-    }
 }

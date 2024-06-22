@@ -28,8 +28,4 @@ open class AndroidScreenActions( driver: AppiumDriver)  : ScreenActions(driver),
         driver["<app-package-here>://$testURL"]
     }
 
-    override fun implicitWait(waitTime: Long) {
-        TODO("Not yet implemented")
-    }
-
 }
